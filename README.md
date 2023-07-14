@@ -1,6 +1,7 @@
 # sql-operations
+Demo of SQL operations deployed to an aws ec2 instance
 
-## Deploy to AWS EC2 Instance
+## Setup AWS EC2 Instance
 
 ### VPC Setup
 1. Create a new VPC with a public and private subnet (use octet to avoid partial octets)
@@ -40,4 +41,13 @@
    ```bash
     SELECT CURRENT_TIMESTAMP;
     ```
+
+## Create an interactive experience
+
+```bash
+npx create-react-app <name> --template typescript
+cd sql-operations
+npm start
+```
+
 
