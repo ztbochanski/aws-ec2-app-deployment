@@ -23,7 +23,7 @@ const SQLCommand: React.FC = () => {
   return (
     <div>
       <InputGroup className="mb-3">
-        <FormControl placeholder="Enter SQL command" value={query} onChange={handleQueryChange} />
+        <FormControl id="command" placeholder="Enter SQL command" value={query} onChange={handleQueryChange} />
         <Button variant="primary" onClick={handleExecute}>Execute</Button>
       </InputGroup>
       {result && <pre>{result}</pre>}
