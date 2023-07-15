@@ -1,5 +1,7 @@
-# sql-operations
-Demo of SQL operations deployed to an aws ec2 instance
+# aws-ec2-app-deployment
+The process to setup aws ec2 instance that uses a VPC with subnets
+
+One use case for subnetting on a VPC would be to only allow database access via the ec2 instance via a private subnet.
 
 ## Setup AWS EC2 Instance
 
@@ -42,11 +44,11 @@ Demo of SQL operations deployed to an aws ec2 instance
     SELECT CURRENT_TIMESTAMP;
     ```
 
-## Create an interactive experience
+## Create an interactive experience to test
 
 ```bash
 npx create-react-app <name> --template typescript
-cd sql-operations
+cd <name>
 npm start
 ```
 
